@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riot Heaven – Ultras, Hools & Casuals Worldwide</title>
+  <meta name="description" content="Riot Heaven – Deine Plattform für Ultras, Hooligans und Casual Culture weltweit. News, Fashion, Szeneclips, Shop und mehr.">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #111;
+      color: #f5f5f5;
+    }
+    header {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: 3rem;
+      margin: 0;
+      color: #e30613;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #1a1a1a;
+      padding: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #f5f5f5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #e30613;
+    }
+    main {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section {
+      margin-bottom: 50px;
+    }
+    .section h2 {
+      color: #e30613;
+      font-family: 'Anton', sans-serif;
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      margin-top: 15px;
+    }
+    .paywall {
+      background-color: #222;
+      padding: 20px;
+      border: 2px solid #e30613;
+      border-radius: 10px;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .paywall button {
+      background-color: #e30613;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    .paywall button:hover {
+      background-color: #ff1c1c;
+    }
+    .patreon-box {
+      background-color: #1a1a1a;
+      padding: 15px;
+      border: 1px solid #e30613;
+      border-radius: 8px;
+      margin-top: 30px;
+      text-align: center;
+    }
+    .patreon-box a {
+      display: inline-block;
+      background-color: #f96854;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    .patreon-box a:hover {
+      background-color: #ff7a67;
+    }
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+      color: #777;
+    }
+  </style>
+  <script>
+    function unlockClips() {
+      const password = prompt("Gib dein Abo-Passwort ein:");
+      if(password === "riotpass") {
+        document.getElementById("vimeo-clip").style.display = "block";
+        document.getElementById("paywall").style.display = "none";
+      } else {
+        alert("Falsches Passwort. Zugang verweigert.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Riot Heaven</h1>
+    <p>Ultras, Hools & Casuals Worldwide</p>
+  </header>
+  <nav>
+    <a href="#news">News</a>
+    <a href="#fashion">Fashion</a>
+    <a href="#clips">Clips</a>
+    <a href="#affiliate">Shop & Deals</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+  <main>
+    <section class="section" id="news">
+      <h2>🔥 Aktuelle Szene-News</h2>
+      <p>Bleib up to date mit den wichtigsten News aus der Ultra-, Hooligan- und Casual-Welt weltweit. Von Derby-Berichten bis hin zu Repression & Kurvenaktionen.</p>
+    </section>
+    <section class="section" id="fashion">
+      <h2>🫵 Szene-Fashion & Gear</h2>
+      <p>Wir zeigen dir angesagte Styles aus der Kurve – von Stone Island, CP Company bis hin zu limitierten Sneaker Drops. Inklusive Affiliate-Links zu besten Deals.</p>
+    </section>
+    <section class="section" id="clips">
+      <h2>🎮 Szeneclips</h2>
+      <p>Exklusive Videoclips direkt aus der Kurve – Pyroshows, Choreos und Derby-Atmosphäre. Zugang nur für Abonnenten.</p>
+      <div class="paywall" id="paywall">
+        <p>Nur für Mitglieder mit aktivem Abo. Monatlicher Zugang via Passwort.</p>
+        <button onclick="unlockClips()">Clip freischalten</button>
+      </div>
+      <div id="vimeo-clip" style="display:none;">
+        <iframe src="https://player.vimeo.com/video/000000000" allowfullscreen></iframe>
+      </div>
+      <p style="font-size: 0.9em; color: #aaa;">Hinweis: Passwort über Patreon, Mail oder Telegram-Gruppe erhältlich.</p>
+      <div class="patreon-box">
+        <p>Unterstütze Riot Heaven auf Patreon und erhalte monatlich dein Zugangspasswort sowie exklusive Extras!</p>
+        <a href="https://www.patreon.com/riotheaven" target="_blank">Zu unserem Patreon</a>
+      </div>
+    </section>
+    <section class="section" id="affiliate">
+      <h2>🛒 Shop & Affiliate-Deals</h2>
+      <p>Check unsere Partner-Shops für exklusive Angebote auf Streetwear, Fanartikel, Tickets und mehr. Supporte Riot Heaven durch deinen Einkauf.</p>
+    </section>
+    <section class="section" id="kontakt">
+      <h2>📬 Kontakt</h2>
+      <p>Du willst uns was schicken, hast Content oder Fragen? Schreib uns auf Insta oder per Mail an <strong>kontakt@riot-heaven.com</strong></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Riot Heaven. All rights reserved. | <a href="https://www.patreon.com/riotheaven" style="color:#e30613; text-decoration:none;">Werde Supporter</a></p>
+  </footer>
+</body>
+</html>
